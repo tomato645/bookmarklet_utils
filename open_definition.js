@@ -9,6 +9,9 @@
         bottom:20px;
         z-index:100;
         opacity:0.9;
+        max-height:20%;
+        overflow: hidden;
+        text-overflow : ellipsis;
         `;
         document.body.prepend(button);
         refresh();
@@ -20,8 +23,6 @@
             let appendText = "";
             if (spaceCount == 0) {
                 appendText = "<strong>...</strong>";
-            } else if (spaceCount > 5) {
-                appendText = `<strong>${text}</strong>`;
             } else {
                 appendText = `<strong>${text}</strong>`;
             }
