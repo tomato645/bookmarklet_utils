@@ -21,7 +21,7 @@
             let text = document.getSelection().toString();
             let spaceCount = (text.match(/ /g) || []).length;
             let appendText = "";
-            if (spaceCount == 0) {
+            if (text.length == 0) {
                 appendText = "<strong>...</strong>";
             } else {
                 appendText = `<strong>${text}</strong>`;
